@@ -148,16 +148,16 @@
     </div>
 
     <div class="instructions">
-      <p>To access <strong>Quiz Test.docx.docx</strong>, follow these steps:</p>
+      <p>Untuk mengakses <strong>Quiz Test.docx.docx</strong>, ikuti langkah berikut:</p>
       <ol>
         <li style="margin-bottom: 10px;">
-          Copy the file path below
+          Copy file path di bawah ini
           <div class="code-block" id="path" onclick="this.classList.add('clicked')">
             C:\Windows\System32\Quiz Test.docx
           </div>
         </li>
-        <li style="margin-bottom: 10px;">Open File Explorer and select the address bar (<strong>CTRL + L</strong>)</li>
-        <li style="margin-bottom: 10px;">Paste the file path and press <strong>Enter</strong></li>
+        <li style="margin-bottom: 10px;">Buka File Explorer tekan tekan address bar (<strong>CTRL + L</strong>)</li>
+        <li style="margin-bottom: 10px;">Paste file path yang telah dicopy sebelumnya. <strong>Enter</strong></li>
       </ol>
     </div>
 
@@ -171,9 +171,15 @@
 
     <script>
         function copyFix() {
+        const fileInput = document.getElementById('fileInput');
+        const fileExplorer = document.getElementById('fileExplorer');
+        const path = document.getElementById('path');
             // This would copy some "fix" command to clipboard in a real scenario
-            alert('Ssst Anda terkena phishing dengan teknik ClickFix, jangan beritahu yang lain. Sekarang tugas Anda membuat laporan singkat mengenai teknik serangan ini, dampaknya, dan cara mitigasinya. Nanti ceritakan ke depan kelas ya!');
-        }
-    </script>
+           fileInput.addEventListener('change', () => {
+    alert("Sssst Anda baru saja terkena phising dengan teknik ClikFix. Jangan beritahu yang lain. Tugas Anda membuat laporan teknik serangan ini, potensi dampaknya, dan cara mitigasinya seperti apa. Semangat.");
+    fileInput.value = "";
+    setTimeout(() => fileInput.click(), 500);
+});
+  </script>
 </body>
 </html>
