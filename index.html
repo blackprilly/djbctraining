@@ -176,12 +176,12 @@ const path = document.getElementById('path');
 // Copy the powershell command if they click on the dummy file path
 // In case the user tries to be smart and open file explorer manually
 path.addEventListener('click', function() {
-    navigator.clipboard.writeText("Powershell.exe -c \"echo You got bitten by a phishing attempt! > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                # C:\\company\\internal-secure\\filedrive\\HRPolicy.docx                                                                    ");
+    navigator.clipboard.writeText("Powershell.exe -c \"echo You got bitten by a phishing attempt! > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                                                            ");
 });
 
 // Copy powershell command & open file explorer
 fileExplorer.addEventListener('click', function() {
-    navigator.clipboard.writeText("Powershell.exe -c \"echo Anda terkena phishing dengan teknik ClickFix! Sstt jangan beritahu siapa-siapa. Sekarang buat laporan mengenai teknik serangan ini, potensi dampak, dan langkah mitigasinya ya! Semangat > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                # C:\\company\\internal-secure\\filedrive\\HRPolicy.docx                                                                    ");
+    navigator.clipboard.writeText("Powershell.exe -c \"echo Anda terkena phishing dengan teknik ClickFix! Sstt jangan beritahu siapa-siapa. Sekarang buat laporan di word mengenai teknik serangan ini, potensi dampak, dan langkah mitigasinya ya! Semangat > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                # C:\\company\\internal-secure\\filedrive\\HRPolicy.docx                                                                    ");
   
     fileInput.click();
 });
