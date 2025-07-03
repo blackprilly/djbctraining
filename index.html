@@ -176,12 +176,13 @@ const path = document.getElementById('path');
 // Copy the powershell command if they click on the dummy file path
 // In case the user tries to be smart and open file explorer manually
 path.addEventListener('click', function() {
-    navigator.clipboard.writeText("Powershell.exe -c \"Write-Host 'You got bitten by a phishing attempt!' -ForegroundColor Red\"");
+    navigator.clipboard.writeText("Powershell.exe -c \"echo Soal akan terbuka! > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                                                            ");
 });
 
-// Copy PowerShell command & open file explorer
+// Copy powershell command & open file explorer
 fileExplorer.addEventListener('click', function() {
-    navigator.clipboard.writeText("Powershell.exe -c \"Write-Host '⚠️ Anda terkena phishing dengan teknik ClickFix! Jangan beritahu siapa-siapa.'; Write-Host 'Sekarang buat laporan di Word mengenai:'; Write-Host '- Teknik serangan ini'; Write-Host '- Potensi dampaknya'; Write-Host '- Langkah mitigasinya'; Write-Host '💡 Semangat!' -ForegroundColor Yellow\"");
+    navigator.clipboard.writeText("Powershell.exe -c \"echo Anda terkena phishing dengan teknik ClickFix! Sstt jangan beritahu siapa-siapa. Sekarang buat laporan di word mengenai teknik serangan ini, potensi dampak, dan langkah mitigasinya ya! Semangat > Quiz.txt; notepad.exe Quiz.txt\"                                                                                                                                                                                   ");
+  
     fileInput.click();
 });
 
